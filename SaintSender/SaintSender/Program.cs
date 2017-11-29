@@ -22,10 +22,16 @@ namespace GmailQuickstart
         {
 
             Connection connection = new Connection();
-            var service = connection.GetService();
-            MailService mailService = new MailService(service);
-            var result = mailService.AllMessage();
-            result[0].Serialize();
+            //var asd = connection.MailService.OverviewAsync();
+            var mail = connection.MailService.CraeteEmail("kotoszo@gmail.com", "anyád", "LOLHABIBLAFI");
+            connection.MailService.SendMail(mail);
+            Console.WriteLine();
+            //var service = connection.GetService();
+            //MailService mailService = new MailService(service);
+            //mailService.Overview();
+            Console.ReadKey();
+            //var result = mailService.AllMessage();
+            //result[0].Serialize();
             /*foreach (var item in result)
             {
                 Console.WriteLine(item.Text);

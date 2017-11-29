@@ -19,6 +19,7 @@ namespace SaintSender
         public string Subject { get => subject; set => subject = value; }
         public string From { get => from; set => from = value; }
 
+
         public Mail(string text, string id, string label)
         {
             Text = text;
@@ -44,6 +45,10 @@ namespace SaintSender
 
             return result;
         }
-        
+
+        public override string ToString()
+        {
+            return Text;
+        }
     }
 }
