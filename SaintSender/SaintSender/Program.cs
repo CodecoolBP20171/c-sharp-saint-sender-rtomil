@@ -22,25 +22,28 @@ namespace GmailQuickstart
         {
 
             Connection connection = new Connection();
+
             //var asd = connection.MailService.OverviewAsync();
-            var mail = connection.MailService.CraeteEmail("kotoszo@gmail.com", "anyád", "LOLHABIBLAFI");
-            connection.MailService.SendMail(mail);
-            Console.WriteLine();
+            /*var mail = connection.MailService.CraeteEmail("kotoszo@gmail.com", "anyád", "LOLHABIBLAFI");
+            connection.MailService.SendMail(mail);*/
+            /*bool a;
+            a = connection.MailService.MailValidator("kotoszo@hotmail.com");
+            Console.WriteLine(a);
+            a = connection.MailService.MailValidator("kot@ma.h");
+            Console.WriteLine(a);
+            a = connection.MailService.MailValidator("32a1sd.dwa3d1w@.h0");
+            Console.WriteLine(a);
+            a = connection.MailService.MailValidator("@5151.asdasd");
+            Console.WriteLine(a);
+            Console.WriteLine();*/
+
             //var service = connection.GetService();
             //MailService mailService = new MailService(service);
             //mailService.Overview();
             Console.ReadKey();
-            //var result = mailService.AllMessage();
-            //result[0].Serialize();
-            /*foreach (var item in result)
-            {
-                Console.WriteLine(item.Text);
-            }*/
-
-           
-            //Console.ReadKey();
             
 
         }
+        
     }
 }
